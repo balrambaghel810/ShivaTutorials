@@ -1,502 +1,662 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - Shiva Tutorials</title>
-    <meta name="description" content="Learn about Shiva Tutorials - our mission, vision, team, and commitment to providing quality IT education to students worldwide.">
-    <meta name="keywords" content="about Shiva Tutorials, IT education, programming tutorials, mission, vision, team, instructors">
-    
+    <meta
+      name="description"
+      content="Learn about Shiva Tutorials - our mission, vision, team, and commitment to providing quality IT education to students worldwide."
+    />
+    <meta
+      name="keywords"
+      content="about Shiva Tutorials, IT education, programming tutorials, mission, vision, team, instructors"
+    />
+
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="fas fa-graduation-cap me-2"></i>Shiva Tutorials
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+      <div class="container">
+        <a class="navbar-brand flex gap-1" href="index.html">
+          <img src="./images/logo.ico" class="" width="30" /> Shiva Tutorials
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tutorials.html">Tutorials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="interview.html">Interview Questions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notes.html">Notes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <button
+              class="btn btn-sm dark-mode-toggle me-3"
+              id="darkModeToggle"
+            >
+              <i class="fas fa-moon"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="courses.html">Courses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tutorials.html">Tutorials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="interview.html">Interview Questions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="notes.html">Notes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-                <div class="d-flex align-items-center">
-                    <button class="btn btn-sm dark-mode-toggle me-3" id="darkModeToggle">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <a href="login.html" class="btn btn-outline-primary btn-sm me-2">Login</a>
-                    <a href="login.html" class="btn btn-primary btn-sm">Signup</a>
-                </div>
-            </div>
+            <a href="login.html" class="btn btn-outline-primary btn-sm me-2"
+              >Login</a
+            >
+            <a href="login.html" class="btn btn-primary btn-sm">Signup</a>
+          </div>
         </div>
+      </div>
     </nav>
 
     <!-- Page Header -->
     <section class="py-5 mt-5 bg-gradient-primary text-white">
-        <div class="container">
-            <div class="text-center">
-                <h1 class="display-4 fw-bold mb-3">About Shiva Tutorials</h1>
-                <p class="lead">Empowering students with quality IT education since 2020</p>
-            </div>
+      <div class="container">
+        <div class="text-center">
+          <h1 class="display-4 fw-bold mb-3">About Shiva Tutorials</h1>
+          <p class="lead">
+            Empowering students with quality IT education since 2020
+          </p>
         </div>
+      </div>
     </section>
 
     <!-- Mission & Vision -->
     <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4">
-                    <div class="pe-lg-5">
-                        <h2 class="display-5 fw-bold mb-4">Our Mission</h2>
-                        <p class="lead mb-3">To provide accessible, high-quality IT education to students worldwide, empowering them to build successful careers in technology.</p>
-                        <p>We believe that education should be free and accessible to everyone, regardless of their background or financial situation. Our mission is to bridge the gap between traditional education and industry requirements by providing practical, up-to-date content that prepares students for real-world challenges.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="ps-lg-5">
-                        <h2 class="display-5 fw-bold mb-4">Our Vision</h2>
-                        <p class="lead mb-3">To become the most trusted and comprehensive online learning platform for IT education globally.</p>
-                        <p>We envision a world where every aspiring IT professional has access to quality learning resources, mentorship, and opportunities to grow. Our vision is to create a vibrant learning community that fosters innovation, collaboration, and continuous learning.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4">
+            <div class="pe-lg-5">
+              <h2 class="display-5 fw-bold mb-4">Our Mission</h2>
+              <p class="lead mb-3">
+                To provide accessible, high-quality IT education to students
+                worldwide, empowering them to build successful careers in
+                technology.
+              </p>
+              <p>
+                We believe that education should be free and accessible to
+                everyone, regardless of their background or financial situation.
+                Our mission is to bridge the gap between traditional education
+                and industry requirements by providing practical, up-to-date
+                content that prepares students for real-world challenges.
+              </p>
             </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="ps-lg-5">
+              <h2 class="display-5 fw-bold mb-4">Our Vision</h2>
+              <p class="lead mb-3">
+                To become the most trusted and comprehensive online learning
+                platform for IT education globally.
+              </p>
+              <p>
+                We envision a world where every aspiring IT professional has
+                access to quality learning resources, mentorship, and
+                opportunities to grow. Our vision is to create a vibrant
+                learning community that fosters innovation, collaboration, and
+                continuous learning.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Why Choose Us -->
     <section class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold">Why Choose Shiva Tutorials?</h2>
-                <p class="lead text-muted">We're different from other learning platforms</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="text-center">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-dollar-sign"></i>
-                        </div>
-                        <h4>Completely Free</h4>
-                        <p class="text-muted">All our courses and tutorials are 100% free. No hidden costs, no subscriptions, no premium content.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="text-center">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-industry"></i>
-                        </div>
-                        <h4>Industry-Relevant Content</h4>
-                        <p class="text-muted">Our curriculum is designed by industry experts and updated regularly to match current market demands.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="text-center">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-hands-helping"></i>
-                        </div>
-                        <h4>Practical Learning</h4>
-                        <p class="text-muted">Focus on hands-on projects and real-world examples rather than just theoretical knowledge.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="text-center">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h4>Expert Instructors</h4>
-                        <p class="text-muted">Learn from experienced professionals who have worked with top tech companies.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="text-center">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h4>Mobile Friendly</h4>
-                        <p class="text-muted">Access our content on any device, anywhere, anytime with our responsive platform.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="text-center">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                        <h4>Community Support</h4>
-                        <p class="text-muted">Join our active community of learners and get help from peers and mentors.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold">Why Choose Shiva Tutorials?</h2>
+          <p class="lead text-muted">
+            We're different from other learning platforms
+          </p>
         </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center">
+              <div class="feature-icon mb-3">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+              <h4>Completely Free</h4>
+              <p class="text-muted">
+                All our courses and tutorials are 100% free. No hidden costs, no
+                subscriptions, no premium content.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center">
+              <div class="feature-icon mb-3">
+                <i class="fas fa-industry"></i>
+              </div>
+              <h4>Industry-Relevant Content</h4>
+              <p class="text-muted">
+                Our curriculum is designed by industry experts and updated
+                regularly to match current market demands.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center">
+              <div class="feature-icon mb-3">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <h4>Practical Learning</h4>
+              <p class="text-muted">
+                Focus on hands-on projects and real-world examples rather than
+                just theoretical knowledge.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center">
+              <div class="feature-icon mb-3">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4>Expert Instructors</h4>
+              <p class="text-muted">
+                Learn from experienced professionals who have worked with top
+                tech companies.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center">
+              <div class="feature-icon mb-3">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h4>Mobile Friendly</h4>
+              <p class="text-muted">
+                Access our content on any device, anywhere, anytime with our
+                responsive platform.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center">
+              <div class="feature-icon mb-3">
+                <i class="fas fa-comments"></i>
+              </div>
+              <h4>Community Support</h4>
+              <p class="text-muted">
+                Join our active community of learners and get help from peers
+                and mentors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Statistics -->
     <section class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold">Our Impact</h2>
-                <p class="lead text-muted">Numbers that speak for themselves</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-3 col-6">
-                    <div class="text-center">
-                        <div class="display-4 fw-bold text-primary mb-2">
-                            <span class="counter" data-target="50000">0</span>+
-                        </div>
-                        <h5>Students Enrolled</h5>
-                        <p class="text-muted">Active learners from around the world</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-6">
-                    <div class="text-center">
-                        <div class="display-4 fw-bold text-success mb-2">
-                            <span class="counter" data-target="25">0</span>+
-                        </div>
-                        <h5>Courses Available</h5>
-                        <p class="text-muted">Comprehensive courses covering all IT topics</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-6">
-                    <div class="text-center">
-                        <div class="display-4 fw-bold text-warning mb-2">
-                            <span class="counter" data-target="100">0</span>+
-                        </div>
-                        <h5>Expert Instructors</h5>
-                        <p class="text-muted">Industry professionals teaching you</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-6">
-                    <div class="text-center">
-                        <div class="display-4 fw-bold text-info mb-2">
-                            <span class="counter" data-target="95">0</span>%
-                        </div>
-                        <h5>Success Rate</h5>
-                        <p class="text-muted">Students who got placed or promoted</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold">Our Impact</h2>
+          <p class="lead text-muted">Numbers that speak for themselves</p>
         </div>
+
+        <div class="row g-4">
+          <div class="col-md-3 col-6">
+            <div class="text-center">
+              <div class="display-4 fw-bold text-primary mb-2">
+                <span class="counter" data-target="50000">0</span>+
+              </div>
+              <h5>Students Enrolled</h5>
+              <p class="text-muted">Active learners from around the world</p>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="text-center">
+              <div class="display-4 fw-bold text-success mb-2">
+                <span class="counter" data-target="25">0</span>+
+              </div>
+              <h5>Courses Available</h5>
+              <p class="text-muted">
+                Comprehensive courses covering all IT topics
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="text-center">
+              <div class="display-4 fw-bold text-warning mb-2">
+                <span class="counter" data-target="100">0</span>+
+              </div>
+              <h5>Expert Instructors</h5>
+              <p class="text-muted">Industry professionals teaching you</p>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="text-center">
+              <div class="display-4 fw-bold text-info mb-2">
+                <span class="counter" data-target="95">0</span>%
+              </div>
+              <h5>Success Rate</h5>
+              <p class="text-muted">Students who got placed or promoted</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Instructors Section -->
     <section class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold">Meet Our Instructors</h2>
-                <p class="lead text-muted">Learn from the best in the industry</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="text-center">
-                        <div class="testimonial-avatar mb-3">RS</div>
-                        <h5>Rahul Sharma</h5>
-                        <p class="text-muted mb-2">Senior Full Stack Developer</p>
-                        <p class="small">10+ years of experience at Google and Microsoft. Expert in React, Node.js, and cloud technologies.</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-3">
-                    <div class="text-center">
-                        <div class="testimonial-avatar mb-3">PK</div>
-                        <h5>Priya Kumar</h5>
-                        <p class="text-muted mb-2">Frontend Architect</p>
-                        <p class="small">8+ years specializing in modern frontend technologies. Passionate about UI/UX and performance optimization.</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-3">
-                    <div class="text-center">
-                        <div class="testimonial-avatar mb-3">AJ</div>
-                        <h5>Amit Jain</h5>
-                        <p class="text-muted mb-2">Backend Engineer</p>
-                        <p class="small">12+ years building scalable systems. Expert in Python, databases, and system design.</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-3">
-                    <div class="text-center">
-                        <div class="testimonial-avatar mb-3">SK</div>
-                        <h5>Sanjay Kumar</h5>
-                        <p class="text-muted mb-2">Data Science Expert</p>
-                        <p class="small">7+ years in machine learning and AI. Specialized in Python, TensorFlow, and data analysis.</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold">Meet Our Instructors</h2>
+          <p class="lead text-muted">Learn from the best in the industry</p>
         </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <div class="testimonial-avatar mb-3">RS</div>
+              <h5>Rahul Sharma</h5>
+              <p class="text-muted mb-2">Senior Full Stack Developer</p>
+              <p class="small">
+                10+ years of experience at Google and Microsoft. Expert in
+                React, Node.js, and cloud technologies.
+              </p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <div class="testimonial-avatar mb-3">PK</div>
+              <h5>Priya Kumar</h5>
+              <p class="text-muted mb-2">Frontend Architect</p>
+              <p class="small">
+                8+ years specializing in modern frontend technologies.
+                Passionate about UI/UX and performance optimization.
+              </p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <div class="testimonial-avatar mb-3">AJ</div>
+              <h5>Amit Jain</h5>
+              <p class="text-muted mb-2">Backend Engineer</p>
+              <p class="small">
+                12+ years building scalable systems. Expert in Python,
+                databases, and system design.
+              </p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <div class="testimonial-avatar mb-3">SK</div>
+              <h5>Sanjay Kumar</h5>
+              <p class="text-muted mb-2">Data Science Expert</p>
+              <p class="small">
+                7+ years in machine learning and AI. Specialized in Python,
+                TensorFlow, and data analysis.
+              </p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Student Success Stories -->
     <section class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold">Student Success Stories</h2>
-                <p class="lead text-muted">Real stories from our successful students</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="testimonial-card">
-                        <div class="testimonial-avatar">NK</div>
-                        <h5>Neha Kumar</h5>
-                        <p class="text-muted mb-2">Software Engineer at Amazon</p>
-                        <p>"Shiva Tutorials helped me crack my dream job! The comprehensive interview preparation and practical projects gave me the confidence I needed. Thank you for making quality education accessible to everyone."</p>
-                        <div class="text-warning">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="testimonial-card">
-                        <div class="testimonial-avatar">RP</div>
-                        <h5>Rohit Patel</h5>
-                        <p class="text-muted mb-2">Full Stack Developer at Startup</p>
-                        <p>"Coming from a non-technical background, I was worried about learning programming. Shiva Tutorials made it so easy with their beginner-friendly approach and step-by-step guidance."</p>
-                        <div class="text-warning">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="testimonial-card">
-                        <div class="testimonial-avatar">AS</div>
-                        <h5>Anjali Sharma</h5>
-                        <p class="text-muted mb-2">Frontend Developer at MNC</p>
-                        <p>"The quality of content and the way concepts are explained is exceptional. I went from knowing nothing about web development to building complex applications in just 6 months."</p>
-                        <div class="text-warning">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold">Student Success Stories</h2>
+          <p class="lead text-muted">
+            Real stories from our successful students
+          </p>
         </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial-card">
+              <div class="testimonial-avatar">NK</div>
+              <h5>Neha Kumar</h5>
+              <p class="text-muted mb-2">Software Engineer at Amazon</p>
+              <p>
+                "Shiva Tutorials helped me crack my dream job! The comprehensive
+                interview preparation and practical projects gave me the
+                confidence I needed. Thank you for making quality education
+                accessible to everyone."
+              </p>
+              <div class="text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial-card">
+              <div class="testimonial-avatar">RP</div>
+              <h5>Rohit Patel</h5>
+              <p class="text-muted mb-2">Full Stack Developer at Startup</p>
+              <p>
+                "Coming from a non-technical background, I was worried about
+                learning programming. Shiva Tutorials made it so easy with their
+                beginner-friendly approach and step-by-step guidance."
+              </p>
+              <div class="text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial-card">
+              <div class="testimonial-avatar">AS</div>
+              <h5>Anjali Sharma</h5>
+              <p class="text-muted mb-2">Frontend Developer at MNC</p>
+              <p>
+                "The quality of content and the way concepts are explained is
+                exceptional. I went from knowing nothing about web development
+                to building complex applications in just 6 months."
+              </p>
+              <div class="text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Our Values -->
     <section class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold">Our Values</h2>
-                <p class="lead text-muted">Principles that guide everything we do</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <h4>Integrity</h4>
-                        <p class="text-muted">We maintain the highest standards of honesty and transparency in all our interactions and content.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <h4>Innovation</h4>
-                        <p class="text-muted">We continuously innovate our teaching methods and content to provide the best learning experience.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <div class="feature-icon mb-3">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                        <h4>Passion</h4>
-                        <p class="text-muted">We are genuinely passionate about education and committed to helping students succeed.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold">Our Values</h2>
+          <p class="lead text-muted">Principles that guide everything we do</p>
         </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="text-center">
+              <div class="feature-icon mb-3">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h4>Integrity</h4>
+              <p class="text-muted">
+                We maintain the highest standards of honesty and transparency in
+                all our interactions and content.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="text-center">
+              <div class="feature-icon mb-3">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h4>Innovation</h4>
+              <p class="text-muted">
+                We continuously innovate our teaching methods and content to
+                provide the best learning experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="text-center">
+              <div class="feature-icon mb-3">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h4>Passion</h4>
+              <p class="text-muted">
+                We are genuinely passionate about education and committed to
+                helping students succeed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CTA Section -->
     <section class="py-5 bg-primary text-white">
-        <div class="container text-center">
-            <h2 class="display-5 fw-bold mb-3">Ready to Start Your Journey?</h2>
-            <p class="lead mb-4">Join thousands of students who have transformed their careers with Shiva Tutorials</p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="courses.html" class="btn btn-light btn-lg px-4">Browse Courses</a>
-                <a href="login.html" class="btn btn-outline-light btn-lg px-4">Sign Up Free</a>
-            </div>
+      <div class="container text-center">
+        <h2 class="display-5 fw-bold mb-3">Ready to Start Your Journey?</h2>
+        <p class="lead mb-4">
+          Join thousands of students who have transformed their careers with
+          Shiva Tutorials
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="courses.html" class="btn btn-light btn-lg px-4"
+            >Browse Courses</a
+          >
+          <a href="login.html" class="btn btn-outline-light btn-lg px-4"
+            >Sign Up Free</a
+          >
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <h5 class="text-white mb-3">Shiva Tutorials</h5>
-                    <p class="text-white-50">Your trusted partner for IT education. Empowering students worldwide with quality, accessible learning resources.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h6 class="text-white mb-3">Quick Links</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="courses.html" class="text-white-50 text-decoration-none">Courses</a></li>
-                        <li><a href="tutorials.html" class="text-white-50 text-decoration-none">Tutorials</a></li>
-                        <li><a href="interview.html" class="text-white-50 text-decoration-none">Interview Questions</a></li>
-                        <li><a href="notes.html" class="text-white-50 text-decoration-none">Notes</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h6 class="text-white mb-3">Support</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
-                        <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <h6 class="text-white mb-3">Contact Info</h6>
-                    <p class="text-white-50">
-                        <i class="fas fa-envelope me-2"></i>info@shivatutorials.com<br>
-                        <i class="fas fa-phone me-2"></i>+91 98765 43210<br>
-                        <i class="fas fa-map-marker-alt me-2"></i>Bangalore, India
-                    </p>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <h5 class="text-white mb-3">Shiva Tutorials</h5>
+            <p class="text-white-50">
+              Your trusted partner for IT education. Empowering students
+              worldwide with quality, accessible learning resources.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            <hr class="bg-white-50">
-            <div class="text-center py-3">
-                <p class="text-white-50 mb-0">&copy; 2024 Shiva Tutorials. All rights reserved. Made with <i class="fas fa-heart text-danger"></i> for learners.</p>
-            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h6 class="text-white mb-3">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="courses.html"
+                  class="text-white-50 text-decoration-none"
+                  >Courses</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tutorials.html"
+                  class="text-white-50 text-decoration-none"
+                  >Tutorials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="interview.html"
+                  class="text-white-50 text-decoration-none"
+                  >Interview Questions</a
+                >
+              </li>
+              <li>
+                <a href="notes.html" class="text-white-50 text-decoration-none"
+                  >Notes</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h6 class="text-white mb-3">Support</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="about.html" class="text-white-50 text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-white-50 text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <h6 class="text-white mb-3">Contact Info</h6>
+            <p class="text-white-50">
+              <i class="fas fa-envelope me-2"></i>info@shivatutorials.com<br />
+              <i class="fas fa-phone me-2"></i>+91 98765 43210<br />
+              <i class="fas fa-map-marker-alt me-2"></i>Bangalore, India
+            </p>
+          </div>
         </div>
+        <hr class="bg-white-50" />
+        <div class="text-center py-3">
+          <p class="text-white-50 mb-0">
+            &copy; 2024 Shiva Tutorials. All rights reserved. Made with
+            <i class="fas fa-heart text-danger"></i> for learners.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <!-- Back to Top Button -->
     <div class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </div>
 
     <!-- Alert Container -->
-    <div id="alertContainer" class="position-fixed top-0 end-0 p-3" style="z-index: 1050;"></div>
+    <div
+      id="alertContainer"
+      class="position-fixed top-0 end-0 p-3"
+      style="z-index: 1050"
+    ></div>
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
-    
+
     <script>
-        // Counter animation
-        function animateCounters() {
-            const counters = document.querySelectorAll('.counter');
-            
-            counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-target'));
-                const increment = target / 100;
-                let current = 0;
-                
-                const updateCounter = () => {
-                    current += increment;
-                    if (current < target) {
-                        counter.textContent = Math.ceil(current);
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        counter.textContent = target;
-                    }
-                };
-                
-                updateCounter();
-            });
-        }
+      // Counter animation
+      function animateCounters() {
+        const counters = document.querySelectorAll(".counter");
 
-        // Trigger counter animation when section is in view
-        const observerOptions = {
-            threshold: 0.5
-        };
+        counters.forEach((counter) => {
+          const target = parseInt(counter.getAttribute("data-target"));
+          const increment = target / 100;
+          let current = 0;
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
+          const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+              counter.textContent = Math.ceil(current);
+              requestAnimationFrame(updateCounter);
+            } else {
+              counter.textContent = target;
+            }
+          };
 
-        const statsSection = document.querySelector('.counter').closest('section');
-        if (statsSection) {
-            observer.observe(statsSection);
-        }
+          updateCounter();
+        });
+      }
+
+      // Trigger counter animation when section is in view
+      const observerOptions = {
+        threshold: 0.5,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateCounters();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      const statsSection = document
+        .querySelector(".counter")
+        .closest("section");
+      if (statsSection) {
+        observer.observe(statsSection);
+      }
     </script>
-</body>
+  </body>
 </html>
