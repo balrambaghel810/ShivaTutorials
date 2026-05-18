@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Questions - Shiva Tutorials</title>
+    <meta name="description" content="Prepare for technical interviews with comprehensive collection of HTML, CSS, JavaScript, React, SQL, and HR interview questions with answers.">
+    <meta name="keywords" content="interview questions, technical interview, HTML interview, CSS interview, JavaScript interview, React interview, SQL interview, HR interview">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>Shiva Tutorials
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutorials.html">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="interview.html">Interview Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notes.html">Notes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-sm dark-mode-toggle me-3" id="darkModeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-primary btn-sm me-2">Login</a>
+                    <a href="login.html" class="btn btn-primary btn-sm">Signup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5 mt-5 bg-warning text-dark">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Interview Questions</h1>
+                    <p class="lead">Comprehensive collection of interview questions to help you prepare for technical and HR interviews</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="search-container">
+                        <input type="text" class="search-input" id="searchInput" placeholder="Search questions...">
+                        <button class="search-btn" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HTML Interview Questions -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fab fa-html5 text-danger me-3"></i>HTML Interview Questions
+                </h2>
+                <p class="lead text-muted">Frequently asked HTML interview questions with detailed answers</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="htmlAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#html1">
+                                    <i class="fas fa-question-circle me-2"></i> What is HTML and what does it stand for?
+                                </button>
+                            </h2>
+                            <div id="html1" class="accordion-collapse collapse show" data-bs-parent="#htmlAccordion">
+                                <div class="accordion-body">
+                                    <strong>HTML</strong> stands for <strong>HyperText Markup Language</strong>. It is the standard markup language used to create web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. HTML elements are the building blocks of HTML pages, represented by tags.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#html2">
+                                    <i class="fas fa-question-circle me-2"></i> What is the difference between HTML and HTML5?
+                                </button>
+                            </h2>
+                            <div id="html2" class="accordion-collapse collapse" data-bs-parent="#htmlAccordion">
+                                <div class="accordion-body">
+                                    <strong>HTML5</strong> is the latest version of HTML with several improvements:
+                                    <ul>
+                                        <li><strong>Semantic Elements:</strong> New elements like &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt;</li>
+                                        <li><strong>Multimedia Support:</strong> Native support for audio and video with &lt;audio&gt; and &lt;video&gt; tags</li>
+                                        <li><strong>Graphics:</strong> Canvas and SVG for better graphics support</li>
+                                        <li><strong>Forms:</strong> New input types like email, date, number, range</li>
+                                        <li><strong>Storage:</strong> LocalStorage and SessionStorage</li>
+                                        <li><strong>APIs:</strong> Geolocation, Drag and Drop, Web Workers</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#html3">
+                                    <i class="fas fa-question-circle me-2"></i> What are semantic HTML elements?
+                                </button>
+                            </h2>
+                            <div id="html3" class="accordion-collapse collapse" data-bs-parent="#htmlAccordion">
+                                <div class="accordion-body">
+                                    <strong>Semantic HTML elements</strong> are elements that clearly describe their meaning to both the browser and developer. Examples include:
+                                    <ul>
+                                        <li>&lt;header&gt; - Defines a header for a document or section</li>
+                                        <li>&lt;nav&gt; - Defines navigation links</li>
+                                        <li>&lt;section&gt; - Defines a section in a document</li>
+                                        <li>&lt;article&gt; - Defines independent, self-contained content</li>
+                                        <li>&lt;aside&gt; - Defines content aside from the main content</li>
+                                        <li>&lt;footer&gt; - Defines a footer for a document or section</li>
+                                        <li>&lt;main&gt; - Specifies the main content of a document</li>
+                                    </ul>
+                                    Benefits: Better SEO, improved accessibility, cleaner code structure.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#html4">
+                                    <i class="fas fa-question-circle me-2"></i> What is the DOCTYPE declaration?
+                                </button>
+                            </h2>
+                            <div id="html4" class="accordion-collapse collapse" data-bs-parent="#htmlAccordion">
+                                <div class="accordion-body">
+                                    The <strong>&lt;!DOCTYPE html&gt;</strong> declaration is an instruction to the web browser about what version of HTML the document is written in. In HTML5, it's simply:
+                                    <br><br>
+                                    <code>&lt;!DOCTYPE html&gt;</code>
+                                    <br><br>
+                                    This declaration ensures that the browser renders the page in standards mode, which is important for consistent rendering across different browsers.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#html5">
+                                    <i class="fas fa-question-circle me-2"></i> What is the difference between block-level and inline elements?
+                                </button>
+                            </h2>
+                            <div id="html5" class="accordion-collapse collapse" data-bs-parent="#htmlAccordion">
+                                <div class="accordion-body">
+                                    <strong>Block-level elements:</strong>
+                                    <ul>
+                                        <li>Take up the full width available</li>
+                                        <li>Always start on a new line</li>
+                                        <li>Can contain other block-level and inline elements</li>
+                                        <li>Examples: &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;-&lt;h6&gt;, &lt;ul&gt;, &lt;li&gt;, &lt;form&gt;</li>
+                                    </ul>
+                                    
+                                    <strong>Inline elements:</strong>
+                                    <ul>
+                                        <li>Take up only as much width as necessary</li>
+                                        <li>Do not start on a new line</li>
+                                        <li>Can only contain other inline elements</li>
+                                        <li>Examples: &lt;span&gt;, &lt;a&gt;, &lt;img&gt;, &lt;strong&gt;, &lt;em&gt;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSS Interview Questions -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fab fa-css3-alt text-primary me-3"></i>CSS Interview Questions
+                </h2>
+                <p class="lead text-muted">Common CSS interview questions with detailed explanations</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="cssAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#css1">
+                                    <i class="fas fa-question-circle me-2"></i> What is CSS and what does it stand for?
+                                </button>
+                            </h2>
+                            <div id="css1" class="accordion-collapse collapse show" data-bs-parent="#cssAccordion">
+                                <div class="accordion-body">
+                                    <strong>CSS</strong> stands for <strong>Cascading Style Sheets</strong>. It is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#css2">
+                                    <i class="fas fa-question-circle me-2"></i> What is the CSS Box Model?
+                                </button>
+                            </h2>
+                            <div id="css2" class="accordion-collapse collapse" data-bs-parent="#cssAccordion">
+                                <div class="accordion-body">
+                                    The <strong>CSS Box Model</strong> is a box that wraps around every HTML element. It consists of:
+                                    <ul>
+                                        <li><strong>Content:</strong> The actual content of the box (text, images)</li>
+                                        <li><strong>Padding:</strong> Clears area around the content (inside the border)</li>
+                                        <li><strong>Border:</strong> Goes around the padding and content</li>
+                                        <li><strong>Margin:</strong> Clears area outside the border</li>
+                                    </ul>
+                                    Total width = width + padding + border + margin
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#css3">
+                                    <i class="fas fa-question-circle me-2"></i> What is the difference between display: none and visibility: hidden?
+                                </button>
+                            </h2>
+                            <div id="css3" class="accordion-collapse collapse" data-bs-parent="#cssAccordion">
+                                <div class="accordion-body">
+                                    <strong>display: none:</strong>
+                                    <ul>
+                                        <li>Removes the element from the document flow</li>
+                                        <li>Takes up no space</li>
+                                        <li>Cannot be focused</li>
+                                        <li>Children are also not displayed</li>
+                                    </ul>
+                                    
+                                    <strong>visibility: hidden:</strong>
+                                    <ul>
+                                        <li>Element is not visible but still takes up space</li>
+                                        <li>Remains in the document flow</li>
+                                        <li>Can be focused</li>
+                                        <li>Children can be made visible</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#css4">
+                                    <i class="fas fa-question-circle me-2"></i> What is Flexbox and how does it work?
+                                </button>
+                            </h2>
+                            <div id="css4" class="accordion-collapse collapse" data-bs-parent="#cssAccordion">
+                                <div class="accordion-body">
+                                    <strong>Flexbox</strong> (Flexible Box Layout) is a CSS layout model that allows easy alignment, direction, order, and size of elements within a container. Key concepts:
+                                    <ul>
+                                        <li><strong>Flex Container:</strong> Parent element with display: flex</li>
+                                        <li><strong>Flex Items:</strong> Direct children of the flex container</li>
+                                        <li><strong>Main Axis:</strong> Primary axis along which flex items are laid out</li>
+                                        <li><strong>Cross Axis:</strong> Perpendicular to the main axis</li>
+                                    </ul>
+                                    Common properties: justify-content, align-items, flex-direction, flex-wrap, flex-grow, flex-shrink.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Interview Questions -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fab fa-js text-warning me-3"></i>JavaScript Interview Questions
+                </h2>
+                <p class="lead text-muted">Essential JavaScript interview questions with detailed answers</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="jsAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#js1">
+                                    <i class="fas fa-question-circle me-2"></i> What is JavaScript and what are its data types?
+                                </button>
+                            </h2>
+                            <div id="js1" class="accordion-collapse collapse show" data-bs-parent="#jsAccordion">
+                                <div class="accordion-body">
+                                    <strong>JavaScript</strong> is a high-level, interpreted programming language that conforms to the ECMAScript specification. It's primarily used for web development but can also be used for server-side programming.
+                                    <br><br>
+                                    <strong>JavaScript Data Types:</strong>
+                                    <ul>
+                                        <li><strong>Primitive Types:</strong> String, Number, Boolean, Undefined, Null, Symbol, BigInt</li>
+                                        <li><strong>Reference Types:</strong> Object, Array, Function, Date, RegExp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js2">
+                                    <i class="fas fa-question-circle me-2"></i> What is the difference between let, const, and var?
+                                </button>
+                            </h2>
+                            <div id="js2" class="accordion-collapse collapse" data-bs-parent="#jsAccordion">
+                                <div class="accordion-body">
+                                    <strong>var:</strong>
+                                    <ul>
+                                        <li>Function-scoped</li>
+                                        <li>Can be redeclared and updated</li>
+                                        <li>Hoisted to the top of its scope</li>
+                                        <li>Creates a property on the global object</li>
+                                    </ul>
+                                    
+                                    <strong>let:</strong>
+                                    <ul>
+                                        <li>Block-scoped</li>
+                                        <li>Cannot be redeclared but can be updated</li>
+                                        <li>Not hoisted (TDZ - Temporal Dead Zone)</li>
+                                        <li>Doesn't create a global property</li>
+                                    </ul>
+                                    
+                                    <strong>const:</strong>
+                                    <ul>
+                                        <li>Block-scoped</li>
+                                        <li>Cannot be redeclared or reassigned</li>
+                                        <li>Not hoisted (TDZ)</li>
+                                        <li>Must be initialized at declaration</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js3">
+                                    <i class="fas fa-question-circle me-2"></i> What is a closure in JavaScript?
+                                </button>
+                            </h2>
+                            <div id="js3" class="accordion-collapse collapse" data-bs-parent="#jsAccordion">
+                                <div class="accordion-body">
+                                    A <strong>closure</strong> is a function that has access to variables in its outer (enclosing) scope even after the outer function has returned. Closures are created every time a function is created.
+                                    <br><br>
+                                    <strong>Example:</strong>
+                                    <pre><code>function outerFunction(x) {
+    return function innerFunction(y) {
+        return x + y;
+    };
+}
+const addFive = outerFunction(5);
+console.log(addFive(3)); // Output: 8</code></pre>
+                                    Closures are used for data privacy, function factories, and callbacks.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js4">
+                                    <i class="fas fa-question-circle me-2"></i> What is the difference between == and ===?
+                                </button>
+                            </h2>
+                            <div id="js4" class="accordion-collapse collapse" data-bs-parent="#jsAccordion">
+                                <div class="accordion-body">
+                                    <strong>== (Loose Equality):</strong>
+                                    <ul>
+                                        <li>Compares values after type coercion</li>
+                                        <li>May convert types to make comparison possible</li>
+                                        <li>Example: 5 == "5" // true</li>
+                                    </ul>
+                                    
+                                    <strong>=== (Strict Equality):</strong>
+                                    <ul>
+                                        <li>Compares both value and type</li>
+                                        <li>No type coercion</li>
+                                        <li>Example: 5 === "5" // false</li>
+                                    </ul>
+                                    
+                                    It's recommended to use === for predictable behavior.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- React Interview Questions -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fab fa-react text-info me-3"></i>React Interview Questions
+                </h2>
+                <p class="lead text-muted">Common React interview questions with comprehensive answers</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="reactAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#react1">
+                                    <i class="fas fa-question-circle me-2"></i> What is React and what are its main features?
+                                </button>
+                            </h2>
+                            <div id="react1" class="accordion-collapse collapse show" data-bs-parent="#reactAccordion">
+                                <div class="accordion-body">
+                                    <strong>React</strong> is a JavaScript library for building user interfaces, particularly single-page applications. It was developed by Facebook.
+                                    <br><br>
+                                    <strong>Main Features:</strong>
+                                    <ul>
+                                        <li><strong>Component-Based:</strong> Build encapsulated components that manage their own state</li>
+                                        <li><strong>Virtual DOM:</strong> Efficient updates through virtual DOM diffing</li>
+                                        <li><strong>Unidirectional Data Flow:</strong> Data flows from parent to child components</li>
+                                        <li><strong>JSX:</strong> Syntax extension for JavaScript</li>
+                                        <li><strong>Hooks:</strong> State and lifecycle features in functional components</li>
+                                        <li><strong>Large Ecosystem:</strong> Rich ecosystem of tools and libraries</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#react2">
+                                    <i class="fas fa-question-circle me-2"></i> What is the Virtual DOM and how does it work?
+                                </button>
+                            </h2>
+                            <div id="react2" class="accordion-collapse collapse" data-bs-parent="#reactAccordion">
+                                <div class="accordion-body">
+                                    The <strong>Virtual DOM</strong> is a JavaScript representation of the real DOM. It's a lightweight copy that React uses to optimize rendering performance.
+                                    <br><br>
+                                    <strong>How it works:</strong>
+                                    <ol>
+                                        <li>State changes create a new Virtual DOM tree</li>
+                                        <li>React compares the new tree with the previous one (diffing)</li>
+                                        <li>Only the changed elements are updated in the real DOM</li>
+                                        <li>This minimizes expensive DOM operations</li>
+                                    </ol>
+                                    Benefits: Better performance, batch updates, improved developer experience.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#react3">
+                                    <i class="fas fa-question-circle me-2"></i> What are React Hooks?
+                                </button>
+                            </h2>
+                            <div id="react3" class="accordion-collapse collapse" data-bs-parent="#reactAccordion">
+                                <div class="accordion-body">
+                                    <strong>React Hooks</strong> are functions that let you use state and other React features in functional components.
+                                    <br><br>
+                                    <strong>Common Hooks:</strong>
+                                    <ul>
+                                        <li><strong>useState:</strong> Manages component state</li>
+                                        <li><strong>useEffect:</strong> Handles side effects</li>
+                                        <li><strong>useContext:</strong> Consumes context values</li>
+                                        <li><strong>useReducer:</strong> Alternative to useState for complex state</li>
+                                        <li><strong>useMemo:</strong> Memoizes expensive calculations</li>
+                                        <li><strong>useCallback:</strong> Memoizes functions</li>
+                                        <li><strong>useRef:</strong> Accesses DOM elements or persists values</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SQL Interview Questions -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-database text-success me-3"></i>SQL Interview Questions
+                </h2>
+                <p class="lead text-muted">Essential SQL interview questions for database roles</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="sqlAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sql1">
+                                    <i class="fas fa-question-circle me-2"></i> What is SQL and what are its main categories?
+                                </button>
+                            </h2>
+                            <div id="sql1" class="accordion-collapse collapse show" data-bs-parent="#sqlAccordion">
+                                <div class="accordion-body">
+                                    <strong>SQL</strong> (Structured Query Language) is a domain-specific language used for managing and manipulating relational databases.
+                                    <br><br>
+                                    <strong>Main Categories:</strong>
+                                    <ul>
+                                        <li><strong>DQL (Data Query Language):</strong> SELECT - retrieves data</li>
+                                        <li><strong>DML (Data Manipulation Language):</strong> INSERT, UPDATE, DELETE - modifies data</li>
+                                        <li><strong>DDL (Data Definition Language):</strong> CREATE, ALTER, DROP - defines structure</li>
+                                        <li><strong>DCL (Data Control Language):</strong> GRANT, REVOKE - controls permissions</li>
+                                        <li><strong>TCL (Transaction Control Language):</strong> COMMIT, ROLLBACK - manages transactions</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sql2">
+                                    <i class="fas fa-question-circle me-2"></i> What is the difference between INNER JOIN and OUTER JOIN?
+                                </button>
+                            </h2>
+                            <div id="sql2" class="accordion-collapse collapse" data-bs-parent="#sqlAccordion">
+                                <div class="accordion-body">
+                                    <strong>INNER JOIN:</strong>
+                                    <ul>
+                                        <li>Returns only matching rows from both tables</li>
+                                        <li>Excludes non-matching rows</li>
+                                        <li>Most commonly used join type</li>
+                                    </ul>
+                                    
+                                    <strong>OUTER JOIN:</strong>
+                                    <ul>
+                                        <li>Returns all rows from one table and matching from other</li>
+                                        <li>Includes non-matching rows with NULL values</li>
+                                        <li>Types: LEFT OUTER JOIN, RIGHT OUTER JOIN, FULL OUTER JOIN</li>
+                                    </ul>
+                                    
+                                    <strong>Example:</strong>
+                                    <pre><code>-- INNER JOIN
+SELECT * FROM employees e
+INNER JOIN departments d ON e.dept_id = d.id;
+
+-- LEFT OUTER JOIN
+SELECT * FROM employees e
+LEFT JOIN departments d ON e.dept_id = d.id;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sql3">
+                                    <i class="fas fa-question-circle me-2"></i> What are database indexes and why are they important?
+                                </button>
+                            </h2>
+                            <div id="sql3" class="accordion-collapse collapse" data-bs-parent="#sqlAccordion">
+                                <div class="accordion-body">
+                                    <strong>Database indexes</strong> are data structures that improve the speed of data retrieval operations on database tables.
+                                    <br><br>
+                                    <strong>Benefits:</strong>
+                                    <ul>
+                                        <li>Dramatically improves query performance</li>
+                                        <li>Reduces I/O operations</li>
+                                        <li>Enables faster data access</li>
+                                        <li>Helps with sorting and grouping operations</li>
+                                    </ul>
+                                    
+                                    <strong>Trade-offs:</strong>
+                                    <ul>
+                                        <li>Increases storage requirements</li>
+                                        <li>Slows down INSERT, UPDATE, DELETE operations</li>
+                                        <li>Requires maintenance</li>
+                                    </ul>
+                                    
+                                    <strong>Types:</strong> B-tree, Hash, Bitmap, Full-text indexes.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HR Interview Questions -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-users text-purple me-3"></i>HR Interview Questions
+                </h2>
+                <p class="lead text-muted">Common HR interview questions and how to answer them</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="hrAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hr1">
+                                    <i class="fas fa-question-circle me-2"></i> Tell me about yourself.
+                                </button>
+                            </h2>
+                            <div id="hr1" class="accordion-collapse collapse show" data-bs-parent="#hrAccordion">
+                                <div class="accordion-body">
+                                    <strong>Best approach:</strong> Structure your answer in 3 parts:
+                                    <ol>
+                                        <li><strong>Present:</strong> Brief introduction about your current role/experience</li>
+                                        <li><strong>Past:</strong> Relevant experience and achievements that led to this point</li>
+                                        <li><strong>Future:</strong> Why you're interested in this role and company</li>
+                                    </ol>
+                                    <strong>Example:</strong> "I'm a software developer with 3 years of experience in web development. I've worked on various projects using React and Node.js, where I led a team to deliver a major e-commerce platform. I'm excited about this opportunity because it aligns with my passion for creating user-friendly applications and your company's innovative approach to technology."
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hr2">
+                                    <i class="fas fa-question-circle me-2"></i> What are your strengths and weaknesses?
+                                </button>
+                            </h2>
+                            <div id="hr2" class="accordion-collapse collapse" data-bs-parent="#hrAccordion">
+                                <div class="accordion-body">
+                                    <strong>For Strengths:</strong>
+                                    <ul>
+                                        <li>Choose strengths relevant to the job</li>
+                                        <li>Provide specific examples</li>
+                                        <li>Show how they benefit the company</li>
+                                    </ul>
+                                    
+                                    <strong>For Weaknesses:</strong>
+                                    <ul>
+                                        <li>Be honest but strategic</li>
+                                        <li>Choose a real but manageable weakness</li>
+                                        <li>Show how you're working to improve it</li>
+                                        <li>Avoid clichés like "I'm a perfectionist"</li>
+                                    </ul>
+                                    
+                                    <strong>Example for weakness:</strong> "I used to struggle with public speaking, but I've been actively working on it by joining Toastmasters and volunteering to present team meetings. I've seen significant improvement and now feel more confident presenting to groups."
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hr3">
+                                    <i class="fas fa-question-circle me-2"></i> Why do you want to work for our company?
+                                </button>
+                            </h2>
+                            <div id="hr3" class="accordion-collapse collapse" data-bs-parent="#hrAccordion">
+                                <div class="accordion-body">
+                                    <strong>Research the company and mention:</strong>
+                                    <ul>
+                                        <li><strong>Company Values:</strong> How they align with your personal values</li>
+                                        <li><strong>Products/Services:</strong> Genuine interest in what they do</li>
+                                        <li><strong>Company Culture:</strong> What attracts you to their work environment</li>
+                                        <li><strong>Growth Opportunities:</strong> How the role fits your career goals</li>
+                                        <li><strong>Recent News:</strong> Show you're up-to-date with company developments</li>
+                                    </ul>
+                                    
+                                    <strong>Example:</strong> "I've been following [Company]'s work in [specific area] and I'm impressed by your commitment to [company value]. Your focus on innovation and employee development aligns perfectly with my career goals. I believe my experience in [relevant skill] would contribute to your ongoing projects and I'm excited about the opportunity to grow with a forward-thinking company."
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Freshers Interview Preparation -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-graduation-cap text-success me-3"></i>Freshers Interview Preparation
+                </h2>
+                <p class="lead text-muted">Essential tips and questions for fresh graduates</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="freshersAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#freshers1">
+                                    <i class="fas fa-question-circle me-2"></i> How to prepare for a technical interview as a fresher?
+                                </button>
+                            </h2>
+                            <div id="freshers1" class="accordion-collapse collapse show" data-bs-parent="#freshersAccordion">
+                                <div class="accordion-body">
+                                    <strong>Preparation Strategy:</strong>
+                                    <ol>
+                                        <li><strong>Strengthen Fundamentals:</strong> Focus on core concepts of your primary language</li>
+                                        <li><strong>Data Structures & Algorithms:</strong> Practice common problems and patterns</li>
+                                        <li><strong>Projects:</strong> Have 2-3 good projects to discuss</li>
+                                        <li><strong>Mock Interviews:</strong> Practice with peers or online platforms</li>
+                                        <li><strong>Company Research:</strong> Understand the company's tech stack</li>
+                                        <li><strong>Problem Solving:</strong> Think aloud during technical questions</li>
+                                        <li><strong>Resume:</strong> Highlight relevant skills and projects</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#freshers2">
+                                    <i class="fas fa-question-circle me-2"></i> What projects should a fresher have?
+                                </button>
+                            </h2>
+                            <div id="freshers2" class="accordion-collapse collapse" data-bs-parent="#freshersAccordion">
+                                <div class="accordion-body">
+                                    <strong>Recommended Projects:</strong>
+                                    <ul>
+                                        <li><strong>Web Application:</strong> Full-stack project using frontend and backend</li>
+                                        <li><strong>Mobile App:</strong> Native or cross-platform application</li>
+                                        <li><strong>API Project:</strong> RESTful API with proper documentation</li>
+                                        <li><strong>Database Project:</strong> Complex database design and queries</li>
+                                        <li><strong>Open Source Contribution:</strong> Contribute to existing projects</li>
+                                    </ul>
+                                    
+                                    <strong>Project Quality Checklist:</strong>
+                                    <ul>
+                                        <li>Complete and functional</li>
+                                        <li>Well-documented code</li>
+                                        <li>Deployed and accessible</li>
+                                        <li>Includes tests</li>
+                                        <li>Professional README</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-3">Ready for Your Interview?</h2>
+            <p class="lead mb-4">Practice more questions and prepare with our comprehensive courses</p>
+            <a href="courses.html" class="btn btn-light btn-lg px-5">Browse Courses</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white mb-3">Shiva Tutorials</h5>
+                    <p class="text-white-50">Your trusted partner for IT education. Prepare for interviews with our comprehensive question bank and detailed answers.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-white mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="courses.html" class="text-white-50 text-decoration-none">Courses</a></li>
+                        <li><a href="tutorials.html" class="text-white-50 text-decoration-none">Tutorials</a></li>
+                        <li><a href="interview.html" class="text-white-50 text-decoration-none">Interview Questions</a></li>
+                        <li><a href="notes.html" class="text-white-50 text-decoration-none">Notes</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-white mb-3">Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="text-white mb-3">Contact Info</h6>
+                    <p class="text-white-50">
+                        <i class="fas fa-envelope me-2"></i>info@shivatutorials.com<br>
+                        <i class="fas fa-phone me-2"></i>+91 98765 43210<br>
+                        <i class="fas fa-map-marker-alt me-2"></i>Bangalore, India
+                    </p>
+                </div>
+            </div>
+            <hr class="bg-white-50">
+            <div class="text-center py-3">
+                <p class="text-white-50 mb-0">&copy; 2024 Shiva Tutorials. All rights reserved. Made with <i class="fas fa-heart text-danger"></i> for learners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Alert Container -->
+    <div id="alertContainer" class="position-fixed top-0 end-0 p-3" style="z-index: 1050;"></div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

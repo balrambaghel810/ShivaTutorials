@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Shiva Tutorials</title>
+    <meta name="description" content="Explore comprehensive IT courses at Shiva Tutorials - HTML, CSS, JavaScript, React, Node.js, MongoDB, SQL, Data Structures, and more.">
+    <meta name="keywords" content="IT courses, programming courses, web development, HTML, CSS, JavaScript, React, Node.js, online courses">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>Shiva Tutorials
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutorials.html">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="interview.html">Interview Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notes.html">Notes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-sm dark-mode-toggle me-3" id="darkModeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-primary btn-sm me-2">Login</a>
+                    <a href="login.html" class="btn btn-primary btn-sm">Signup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5 mt-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Our Courses</h1>
+                    <p class="lead">Master IT skills with our comprehensive courses designed for all skill levels</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="search-container">
+                        <input type="text" class="search-input" id="searchInput" placeholder="Search courses...">
+                        <button class="search-btn" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <button class="btn btn-outline-primary filter-btn active" data-filter="all">All Courses</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="frontend">Frontend</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="backend">Backend</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="database">Database</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="programming">Programming</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="cs-fundamentals">CS Fundamentals</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4" id="coursesGrid">
+                <!-- HTML Course -->
+                <div class="col-md-6 col-lg-4 frontend">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed/html5-web-development/400/200.jpg" class="card-img-top" alt="HTML Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">HTML Complete Course</h3>
+                            <p class="card-text">Learn HTML from basics to advanced concepts including HTML5, semantic tags, forms, tables, and modern web standards.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-beginner">Beginner</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>8 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>15,234 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.8
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="HTML Complete Course">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CSS Course -->
+                <div class="col-md-6 col-lg-4 frontend">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed/css3-styling-design/400/200.jpg" class="card-img-top" alt="CSS Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">CSS Mastery</h3>
+                            <p class="card-text">Master CSS including Flexbox, Grid, animations, transitions, responsive design, and modern CSS techniques.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-beginner">Beginner</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>12 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>12,456 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.7
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="CSS Mastery">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JavaScript Course -->
+                <div class="col-md-6 col-lg-4 frontend programming">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed/javascript-programming-code/400/200.jpg" class="card-img-top" alt="JavaScript Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">JavaScript Mastery</h3>
+                            <p class="card-text">Master JavaScript programming including ES6+, async programming, DOM manipulation, closures, and modern patterns.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-intermediate">Intermediate</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>20 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>18,923 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.9
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="JavaScript Mastery">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bootstrap Course -->
+                <div class="col-md-6 col-lg-4 frontend">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed/bootstrap-responsive-design/400/200.jpg" class="card-img-top" alt="Bootstrap Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">Bootstrap 5 Complete Guide</h3>
+                            <p class="card-text">Learn Bootstrap 5 framework including components, utilities, responsive design, and custom theming.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-beginner">Beginner</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>6 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>9,876 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.6
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="Bootstrap 5 Complete Guide">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- React Course -->
+                <div class="col-md-6 col-lg-4 frontend">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed-react-js-framework/400/200.jpg" class="card-img-top" alt="React Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">React.js Complete Guide</h3>
+                            <p class="card-text">Build modern web applications with React, including hooks, context API, Redux, React Router, and best practices.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-advanced">Advanced</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>25 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>14,567 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.8
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="React.js Complete Guide">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Redux Course -->
+                <div class="col-md-6 col-lg-4 frontend">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed/redux-state-management/400/200.jpg" class="card-img-top" alt="Redux Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">Redux Toolkit Masterclass</h3>
+                            <p class="card-text">Master state management with Redux Toolkit, including slices, middleware, async thunks, and best practices.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-advanced">Advanced</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>8 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>6,234 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.7
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="Redux Toolkit Masterclass">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tailwind CSS Course -->
+                <div class="col-md-6 col-lg-4 frontend">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed/tailwind-css-utility-first/400/200.jpg" class="card-img-top" alt="Tailwind CSS Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">Tailwind CSS Complete Course</h3>
+                            <p class="card-text">Learn utility-first CSS framework with Tailwind CSS, including responsive design, components, and customization.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-intermediate">Intermediate</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>10 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>7,890 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.8
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="Tailwind CSS Complete Course">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Git & GitHub Course -->
+                <div class="col-md-6 col-lg-4 programming">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed-git-version-control-github/400/200.jpg" class="card-img-top" alt="Git & GitHub Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">Git & GitHub Masterclass</h3>
+                            <p class="card-text">Learn version control with Git and collaboration using GitHub, including branching, merging, and pull requests.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-beginner">Beginner</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>5 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>11,234 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.9
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="Git & GitHub Masterclass">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node.js Course -->
+                <div class="col-md-6 col-lg-4 backend">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed-nodejs-backend-server/400/200.jpg" class="card-img-top" alt="Node.js Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">Node.js Backend Development</h3>
+                            <p class="card-text">Build server-side applications with Node.js and Express, including REST APIs, middleware, and authentication.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-intermediate">Intermediate</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>18 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>10,456 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.7
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="Node.js Backend Development">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MongoDB Course -->
+                <div class="col-md-6 col-lg-4 database backend">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed/mongodb-nosql-database/400/200.jpg" class="card-img-top" alt="MongoDB Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">MongoDB Complete Guide</h3>
+                            <p class="card-text">Learn NoSQL database with MongoDB, including CRUD operations, aggregation, indexing, and schema design.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-intermediate">Intermediate</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>12 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>8,234 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.6
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="MongoDB Complete Guide">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SQL Course -->
+                <div class="col-md-6 col-lg-4 database">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed-sql-database-relational/400/200.jpg" class="card-img-top" alt="SQL Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">SQL Masterclass</h3>
+                            <p class="card-text">Master SQL including queries, joins, subqueries, indexing, transactions, and database design principles.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-beginner">Beginner</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>15 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>13,567 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.8
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="SQL Masterclass">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Structures Course -->
+                <div class="col-md-6 col-lg-4 cs-fundamentals programming">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed/datastructures-algorithms-coding/400/200.jpg" class="card-img-top" alt="Data Structures Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">Data Structures & Algorithms</h3>
+                            <p class="card-text">Learn essential data structures and algorithms including arrays, linked lists, trees, graphs, sorting, and searching.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-intermediate">Intermediate</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>30 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>16,789 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.9
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="Data Structures & Algorithms">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operating System Course -->
+                <div class="col-md-6 col-lg-4 cs-fundamentals">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed/operating-system-linux-windows/400/200.jpg" class="card-img-top" alt="Operating System Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">Operating System Fundamentals</h3>
+                            <p class="card-text">Understand operating systems concepts including processes, memory management, file systems, and synchronization.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-intermediate">Intermediate</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>25 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>7,234 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.7
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="Operating System Fundamentals">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DBMS Course -->
+                <div class="col-md-6 col-lg-4 cs-fundamentals database">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed/dbms-database-management/400/200.jpg" class="card-img-top" alt="DBMS Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">Database Management Systems</h3>
+                            <p class="card-text">Learn DBMS concepts including relational models, normalization, transactions, concurrency control, and recovery.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-intermediate">Intermediate</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>20 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>9,876 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.6
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="Database Management Systems">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Computer Networks Course -->
+                <div class="col-md-6 col-lg-4 cs-fundamentals">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed/computer-networks-tcp-ip/400/200.jpg" class="card-img-top" alt="Computer Networks Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">Computer Networks</h3>
+                            <p class="card-text">Master networking concepts including OSI model, TCP/IP, routing, switching, and network security fundamentals.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-intermediate">Intermediate</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>22 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>8,543 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.7
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="Computer Networks">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OOPs Concepts Course -->
+                <div class="col-md-6 col-lg-4 programming cs-fundamentals">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed/oops-object-oriented-programming/400/200.jpg" class="card-img-top" alt="OOPs Concepts Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">Object-Oriented Programming</h3>
+                            <p class="card-text">Master OOP concepts including classes, objects, inheritance, polymorphism, encapsulation, and abstraction.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-beginner">Beginner</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>10 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>12,345 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.8
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="Object-Oriented Programming">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aptitude Course -->
+                <div class="col-md-6 col-lg-4 cs-fundamentals">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed/aptitude-quantitative-reasoning/400/200.jpg" class="card-img-top" alt="Aptitude Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">Quantitative Aptitude</h3>
+                            <p class="card-text">Improve your quantitative aptitude with topics like arithmetic, algebra, geometry, probability, and logical reasoning.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-beginner">Beginner</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>15 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>10,987 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.5
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="Quantitative Aptitude">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interview Preparation Course -->
+                <div class="col-md-6 col-lg-4 cs-fundamentals">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/seed/interview-preparation-technical/400/200.jpg" class="card-img-top" alt="Interview Preparation Course">
+                        <div class="course-card-body">
+                            <h3 class="course-title">Complete Interview Preparation</h3>
+                            <p class="card-text">Comprehensive interview preparation including technical questions, problem-solving, resume building, and mock interviews.</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="course-level level-advanced">Advanced</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>35 hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted"><i class="fas fa-users me-1"></i>19,234 students</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i> 4.9
+                                </span>
+                            </div>
+                            <button class="btn-primary-custom w-100 enroll-btn" data-course="Complete Interview Preparation">
+                                <i class="fas fa-play-circle me-2"></i>Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-3">Ready to Start Learning?</h2>
+            <p class="lead mb-4">Join thousands of students who have transformed their careers with our courses</p>
+            <a href="login.html" class="btn btn-light btn-lg px-5">Get Started Free</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white mb-3">Shiva Tutorials</h5>
+                    <p class="text-white-50">Your trusted partner for IT education. Learn programming, web development, and computer science fundamentals with our comprehensive courses.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-white mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="courses.html" class="text-white-50 text-decoration-none">Courses</a></li>
+                        <li><a href="tutorials.html" class="text-white-50 text-decoration-none">Tutorials</a></li>
+                        <li><a href="interview.html" class="text-white-50 text-decoration-none">Interview Questions</a></li>
+                        <li><a href="notes.html" class="text-white-50 text-decoration-none">Notes</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-white mb-3">Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="text-white mb-3">Contact Info</h6>
+                    <p class="text-white-50">
+                        <i class="fas fa-envelope me-2"></i>info@shivatutorials.com<br>
+                        <i class="fas fa-phone me-2"></i>+91 98765 43210<br>
+                        <i class="fas fa-map-marker-alt me-2"></i>Bangalore, India
+                    </p>
+                </div>
+            </div>
+            <hr class="bg-white-50">
+            <div class="text-center py-3">
+                <p class="text-white-50 mb-0">&copy; 2024 Shiva Tutorials. All rights reserved. Made with <i class="fas fa-heart text-danger"></i> for learners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Alert Container -->
+    <div id="alertContainer" class="position-fixed top-0 end-0 p-3" style="z-index: 1050;"></div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Handle course enrollment
+        document.addEventListener('DOMContentLoaded', function() {
+            const enrollButtons = document.querySelectorAll('.enroll-btn');
+            
+            enrollButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const courseName = this.getAttribute('data-course');
+                    const hideLoading = ShivaTutorials.showLoading(this);
+                    
+                    setTimeout(() => {
+                        hideLoading();
+                        ShivaTutorials.showAlert(`Successfully enrolled in ${courseName}!`, 'success');
+                    }, 1500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

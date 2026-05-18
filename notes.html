@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes - Shiva Tutorials</title>
+    <meta name="description" content="Download comprehensive study notes, PDF notes, revision notes, handwritten notes, and important questions for IT courses and interview preparation.">
+    <meta name="keywords" content="study notes, PDF notes, revision notes, handwritten notes, important questions, IT notes, programming notes">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>Shiva Tutorials
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutorials.html">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="interview.html">Interview Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="notes.html">Notes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-sm dark-mode-toggle me-3" id="darkModeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-primary btn-sm me-2">Login</a>
+                    <a href="login.html" class="btn btn-primary btn-sm">Signup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5 mt-5 bg-info text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Study Notes</h1>
+                    <p class="lead">Comprehensive study materials including PDF notes, revision materials, handwritten notes, and important questions</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="search-container">
+                        <input type="text" class="search-input" id="searchInput" placeholder="Search notes...">
+                        <button class="search-btn" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Notes Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-file-pdf text-danger me-3"></i>PDF Notes
+                </h2>
+                <p class="lead text-muted">Comprehensive PDF notes for all subjects and topics</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <img src="https://picsum.photos/seed/html-css-web-development-notes/60/60.jpg" alt="HTML & CSS Notes" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        </div>
+                        <h4>HTML & CSS Notes</h4>
+                        <p class="text-muted mb-3">Complete HTML5 and CSS3 notes with examples and best practices</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">PDF</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>2,345</span>
+                        </div>
+                        <button class="btn btn-primary download-btn" data-file="HTML_CSS_Notes.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <img src="https://picsum.photos/seed/javascript-programming-notes/60/60.jpg" alt="JavaScript Notes" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        </div>
+                        <h4>JavaScript Notes</h4>
+                        <p class="text-muted mb-3">JavaScript fundamentals to advanced concepts with practical examples</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">PDF</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>3,567</span>
+                        </div>
+                        <button class="btn btn-primary download-btn" data-file="JavaScript_Notes.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <img src="https://picsum.photos/seed/react-js-framework-notes/60/60.jpg" alt="React.js Notes" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        </div>
+                        <h4>React.js Notes</h4>
+                        <p class="text-muted mb-3">Complete React guide with hooks, state management, and projects</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">PDF</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>2,890</span>
+                        </div>
+                        <button class="btn btn-primary download-btn" data-file="React_Notes.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <img src="https://picsum.photos/seed/nodejs-backend-server-notes/60/60.jpg" alt="Node.js Notes" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        </div>
+                        <h4>Node.js Notes</h4>
+                        <p class="text-muted mb-3">Backend development with Node.js and Express framework</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">PDF</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>1,987</span>
+                        </div>
+                        <button class="btn btn-primary download-btn" data-file="NodeJS_Notes.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <img src="https://picsum.photos/seed/datastructures-algorithms-coding/60/60.jpg" alt="Data Structures" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        </div>
+                        <h4>Data Structures</h4>
+                        <p class="text-muted mb-3">Complete data structures and algorithms guide with examples</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">PDF</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>4,123</span>
+                        </div>
+                        <button class="btn btn-primary download-btn" data-file="Data_Structures_Notes.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <img src="https://picsum.photos/seed/sql-database-relational/60/60.jpg" alt="SQL & Database" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        </div>
+                        <h4>SQL & Database</h4>
+                        <p class="text-muted mb-3">SQL fundamentals, database design, and optimization techniques</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">PDF</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>2,654</span>
+                        </div>
+                        <button class="btn btn-primary download-btn" data-file="SQL_Database_Notes.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <img src="https://picsum.photos/seed/operating-system-linux-windows/60/60.jpg" alt="Operating Systems" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        </div>
+                        <h4>Operating Systems</h4>
+                        <p class="text-muted mb-3">OS concepts, processes, memory management, and scheduling</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">PDF</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>1,876</span>
+                        </div>
+                        <button class="btn btn-primary download-btn" data-file="Operating_Systems_Notes.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <img src="https://picsum.photos/seed/computer-networks-tcp-ip/60/60.jpg" alt="Computer Networks" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        </div>
+                        <h4>Computer Networks</h4>
+                        <p class="text-muted mb-3">Network protocols, OSI model, and security fundamentals</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">PDF</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>2,109</span>
+                        </div>
+                        <button class="btn btn-primary download-btn" data-file="Computer_Networks_Notes.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Revision Notes Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-sync-alt text-success me-3"></i>Revision Notes
+                </h2>
+                <p class="lead text-muted">Quick revision materials for exam preparation</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <img src="https://picsum.photos/seed/html5-quick-revision-web/60/60.jpg" alt="HTML Quick Revision" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        </div>
+                        <h4>HTML Quick Revision</h4>
+                        <p class="text-muted mb-3">Essential HTML tags and concepts for quick revision</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-success">Revision</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>1,234</span>
+                        </div>
+                        <button class="btn btn-success download-btn" data-file="HTML_Quick_Revision.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <img src="https://picsum.photos/seed/css3-cheat-sheet-styling/60/60.jpg" alt="CSS Cheat Sheet" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        </div>
+                        <h4>CSS Cheat Sheet</h4>
+                        <p class="text-muted mb-3">CSS properties and selectors reference guide</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-success">Revision</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>1,567</span>
+                        </div>
+                        <button class="btn btn-success download-btn" data-file="CSS_Cheat_Sheet.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <img src="https://picsum.photos/seed/javascript-es6-modern-features/60/60.jpg" alt="JavaScript ES6+" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        </div>
+                        <h4>JavaScript ES6+</h4>
+                        <p class="text-muted mb-3">Modern JavaScript features and syntax quick reference</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-success">Revision</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>1,890</span>
+                        </div>
+                        <button class="btn btn-success download-btn" data-file="JavaScript_ES6_Plus.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h4>React Hooks</h4>
+                        <p class="text-muted mb-3">All React hooks explained with examples</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-success">Revision</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>1,456</span>
+                        </div>
+                        <button class="btn btn-success download-btn" data-file="React_Hooks.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Short Notes Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-sticky-note text-warning me-3"></i>Short Notes
+                </h2>
+                <p class="lead text-muted">Concise notes for last-minute preparation</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-sticky-note"></i>
+                        </div>
+                        <h4>Web Basics</h4>
+                        <p class="text-muted mb-3">Essential web development concepts in 10 pages</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-warning">Short Notes</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>987</span>
+                        </div>
+                        <button class="btn btn-warning download-btn" data-file="Web_Basics_Short_Notes.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-sticky-note"></i>
+                        </div>
+                        <h4>Git Commands</h4>
+                        <p class="text-muted mb-3">Most commonly used Git commands reference</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-warning">Short Notes</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>1,234</span>
+                        </div>
+                        <button class="btn btn-warning download-btn" data-file="Git_Commands.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-sticky-note"></i>
+                        </div>
+                        <h4>SQL Queries</h4>
+                        <p class="text-muted mb-3">Important SQL queries and examples</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-warning">Short Notes</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>1,567</span>
+                        </div>
+                        <button class="btn btn-warning download-btn" data-file="SQL_Queries.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-sticky-note"></i>
+                        </div>
+                        <h4>Interview Tips</h4>
+                        <p class="text-muted mb-3">Quick interview preparation checklist</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-warning">Short Notes</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>2,345</span>
+                        </div>
+                        <button class="btn btn-warning download-btn" data-file="Interview_Tips.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Handwritten Notes Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-pen-fancy text-primary me-3"></i>Handwritten Notes
+                </h2>
+                <p class="lead text-muted">Scanned handwritten notes for better understanding</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <h4>Algorithms Notes</h4>
+                        <p class="text-muted mb-3">Handwritten algorithm explanations and diagrams</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-primary">Handwritten</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>876</span>
+                        </div>
+                        <button class="btn btn-primary download-btn" data-file="Algorithms_Handwritten.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <h4>Data Structures</h4>
+                        <p class="text-muted mb-3">Visual data structures explanations with diagrams</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-primary">Handwritten</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>1,098</span>
+                        </div>
+                        <button class="btn btn-primary download-btn" data-file="Data_Structures_Handwritten.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <h4>System Design</h4>
+                        <p class="text-muted mb-3">System design architecture diagrams and notes</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-primary">Handwritten</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>654</span>
+                        </div>
+                        <button class="btn btn-primary download-btn" data-file="System_Design_Handwritten.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <h4>Mathematics</h4>
+                        <p class="text-muted mb-3">Mathematical concepts for programming</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-primary">Handwritten</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>543</span>
+                        </div>
+                        <button class="btn btn-primary download-btn" data-file="Mathematics_Handwritten.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Questions Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-question-circle text-danger me-3"></i>Important Questions
+                </h2>
+                <p class="lead text-muted">Frequently asked questions for exams and interviews</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h4>HTML Interview Q&A</h4>
+                        <p class="text-muted mb-3">50 most important HTML interview questions</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">Q&A</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>3,456</span>
+                        </div>
+                        <button class="btn btn-danger download-btn" data-file="HTML_Interview_QA.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h4>JavaScript Interview Q&A</h4>
+                        <p class="text-muted mb-3">100 JavaScript interview questions with answers</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">Q&A</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>4,567</span>
+                        </div>
+                        <button class="btn btn-danger download-btn" data-file="JavaScript_Interview_QA.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h4>React Interview Q&A</h4>
+                        <p class="text-muted mb-3">75 React interview questions with detailed answers</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">Q&A</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>2,890</span>
+                        </div>
+                        <button class="btn btn-danger download-btn" data-file="React_Interview_QA.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h4>SQL Interview Q&A</h4>
+                        <p class="text-muted mb-3">60 SQL interview questions with solutions</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">Q&A</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>3,234</span>
+                        </div>
+                        <button class="btn btn-danger download-btn" data-file="SQL_Interview_QA.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h4>Data Structures Q&A</h4>
+                        <p class="text-muted mb-3">80 data structures interview questions</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">Q&A</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>3,678</span>
+                        </div>
+                        <button class="btn btn-danger download-btn" data-file="Data_Structures_QA.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h4>OS Interview Q&A</h4>
+                        <p class="text-muted mb-3">50 operating systems interview questions</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">Q&A</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>2,345</span>
+                        </div>
+                        <button class="btn btn-danger download-btn" data-file="OS_Interview_QA.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h4>Networks Interview Q&A</h4>
+                        <p class="text-muted mb-3">45 computer networks interview questions</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">Q&A</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>2,123</span>
+                        </div>
+                        <button class="btn btn-danger download-btn" data-file="Networks_Interview_QA.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="notes-card">
+                        <div class="notes-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h4>HR Interview Q&A</h4>
+                        <p class="text-muted mb-3">30 HR interview questions with best answers</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-danger">Q&A</span>
+                            <span class="text-muted"><i class="fas fa-download me-1"></i>4,567</span>
+                        </div>
+                        <button class="btn btn-danger download-btn" data-file="HR_Interview_QA.pdf">
+                            <i class="fas fa-download me-2"></i>Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-3">Need More Study Materials?</h2>
+            <p class="lead mb-4">Explore our courses and tutorials for comprehensive learning</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="courses.html" class="btn btn-light btn-lg px-4">Browse Courses</a>
+                <a href="tutorials.html" class="btn btn-outline-light btn-lg px-4">View Tutorials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white mb-3">Shiva Tutorials</h5>
+                    <p class="text-white-50">Your trusted partner for IT education. Download comprehensive study notes and prepare for your exams and interviews.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-white mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="courses.html" class="text-white-50 text-decoration-none">Courses</a></li>
+                        <li><a href="tutorials.html" class="text-white-50 text-decoration-none">Tutorials</a></li>
+                        <li><a href="interview.html" class="text-white-50 text-decoration-none">Interview Questions</a></li>
+                        <li><a href="notes.html" class="text-white-50 text-decoration-none">Notes</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-white mb-3">Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="text-white mb-3">Contact Info</h6>
+                    <p class="text-white-50">
+                        <i class="fas fa-envelope me-2"></i>info@shivatutorials.com<br>
+                        <i class="fas fa-phone me-2"></i>+91 98765 43210<br>
+                        <i class="fas fa-map-marker-alt me-2"></i>Bangalore, India
+                    </p>
+                </div>
+            </div>
+            <hr class="bg-white-50">
+            <div class="text-center py-3">
+                <p class="text-white-50 mb-0">&copy; 2024 Shiva Tutorials. All rights reserved. Made with <i class="fas fa-heart text-danger"></i> for learners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Alert Container -->
+    <div id="alertContainer" class="position-fixed top-0 end-0 p-3" style="z-index: 1050;"></div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

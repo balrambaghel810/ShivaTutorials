@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials - Shiva Tutorials</title>
+    <meta name="description" content="Free programming tutorials on frontend development, backend development, databases, programming languages, interview preparation, and computer science fundamentals.">
+    <meta name="keywords" content="programming tutorials, web development tutorials, frontend tutorials, backend tutorials, database tutorials, coding tutorials">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>Shiva Tutorials
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tutorials.html">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="interview.html">Interview Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notes.html">Notes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-sm dark-mode-toggle me-3" id="darkModeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-primary btn-sm me-2">Login</a>
+                    <a href="login.html" class="btn btn-primary btn-sm">Signup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5 mt-5 bg-success text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Programming Tutorials</h1>
+                    <p class="lead">Free, beginner-friendly tutorials to help you master programming concepts and practical skills</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="search-container">
+                        <input type="text" class="search-input" id="searchInput" placeholder="Search tutorials...">
+                        <button class="search-btn" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frontend Development Tutorials -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-laptop-code text-primary me-3"></i>Frontend Development
+                </h2>
+                <p class="lead text-muted">Learn to build beautiful and interactive user interfaces</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-code fa-3x text-danger"></i>
+                        </div>
+                        <h3>HTML5 Complete Guide</h3>
+                        <p class="text-muted mb-3">Beginner-friendly tutorial covering HTML5 basics, semantic tags, forms, multimedia, and best practices for modern web development.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>HTML5 Semantic Elements</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Forms & Validation</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Audio & Video</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Canvas & SVG</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-success">Beginner</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-palette fa-3x text-primary"></i>
+                        </div>
+                        <h3>CSS3 & Flexbox Tutorial</h3>
+                        <p class="text-muted mb-3">Master CSS3 features including Flexbox layout, Grid, animations, transitions, and responsive design techniques.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Flexbox Layout</li>
+                            <li><i class="fas fa-check text-success me-2"></i>CSS Grid</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Animations</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Responsive Design</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning">Intermediate</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-atom fa-3x text-warning"></i>
+                        </div>
+                        <h3>JavaScript ES6+ Tutorial</h3>
+                        <p class="text-muted mb-3">Learn modern JavaScript with ES6+ features, async programming, DOM manipulation, and practical examples.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Arrow Functions</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Promises & Async/Await</li>
+                            <li><i class="fas fa-check text-success me-2"></i>DOM Manipulation</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Event Handling</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning">Intermediate</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fab fa-react fa-3x text-info"></i>
+                        </div>
+                        <h3>React.js Fundamentals</h3>
+                        <p class="text-muted mb-3">Build dynamic web applications with React including components, hooks, state management, and routing.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Components & Props</li>
+                            <li><i class="fas fa-check text-success me-2"></i>React Hooks</li>
+                            <li><i class="fas fa-check text-success me-2"></i>State Management</li>
+                            <li><i class="fas fa-check text-success me-2"></i>React Router</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-danger">Advanced</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fab fa-bootstrap fa-3x text-purple"></i>
+                        </div>
+                        <h3>Bootstrap 5 Tutorial</h3>
+                        <p class="text-muted mb-3">Create responsive websites quickly with Bootstrap 5 components, utilities, and customization techniques.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Grid System</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Components</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Utilities</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Customization</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-success">Beginner</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-wind fa-3x text-teal"></i>
+                        </div>
+                        <h3>Tailwind CSS Guide</h3>
+                        <p class="text-muted mb-3">Learn utility-first CSS framework with Tailwind CSS for rapid UI development and custom designs.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Utility Classes</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Responsive Design</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Components</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Customization</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning">Intermediate</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Backend Development Tutorials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-server text-success me-3"></i>Backend Development
+                </h2>
+                <p class="lead text-muted">Master server-side programming and API development</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fab fa-node-js fa-3x text-success"></i>
+                        </div>
+                        <h3>Node.js & Express Tutorial</h3>
+                        <p class="text-muted mb-3">Build RESTful APIs with Node.js and Express framework, including middleware, authentication, and database integration.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Express Basics</li>
+                            <li><i class="fas fa-check text-success me-2"></i>REST APIs</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Middleware</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Authentication</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning">Intermediate</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fab fa-python fa-3x text-primary"></i>
+                        </div>
+                        <h3>Python Django Tutorial</h3>
+                        <p class="text-muted mb-3">Learn Django framework for building robust web applications with Python, including models, views, and templates.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Django Setup</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Models & Database</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Views & URLs</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Templates</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning">Intermediate</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-code-branch fa-3x text-info"></i>
+                        </div>
+                        <h3>REST API Design</h3>
+                        <p class="text-muted mb-3">Learn best practices for designing and implementing RESTful APIs with proper HTTP methods, status codes, and error handling.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>REST Principles</li>
+                            <li><i class="fas fa-check text-success me-2"></i>HTTP Methods</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Status Codes</li>
+                            <li><i class="fas fa-check text-success me-2"></i>API Documentation</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning">Intermediate</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Database Tutorials -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-database text-warning me-3"></i>Database
+                </h2>
+                <p class="lead text-muted">Learn SQL and NoSQL database management</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-table fa-3x text-primary"></i>
+                        </div>
+                        <img src="https://picsum.photos/seed-git-version-control-collaboration/80/80.jpg" alt="Git & GitHub" class="rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover;">
+                        <h3>SQL Complete Tutorial</h3>
+                        <p class="text-muted mb-3">Master SQL with comprehensive coverage of queries, joins, subqueries, indexing, and database design principles.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Basic Queries</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Joins & Subqueries</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Indexing</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Database Design</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-success">Beginner</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-leaf fa-3x text-success"></i>
+                        </div>
+                        <h3>MongoDB Tutorial</h3>
+                        <p class="text-muted mb-3">Learn NoSQL database with MongoDB including CRUD operations, aggregation pipeline, indexing, and schema design.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>CRUD Operations</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Aggregation</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Indexing</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Schema Design</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning">Intermediate</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-project-diagram fa-3x text-info"></i>
+                        </div>
+                        <h3>Database Design</h3>
+                        <p class="text-muted mb-3">Learn database normalization, ER diagrams, and best practices for designing efficient and scalable databases.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Normalization</li>
+                            <li><i class="fas fa-check text-success me-2"></i>ER Diagrams</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Relationship Types</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Performance Optimization</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning">Intermediate</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programming Languages Tutorials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-code text-danger me-3"></i>Programming Languages
+                </h2>
+                <p class="lead text-muted">Master fundamental programming concepts and languages</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fab fa-python fa-3x text-primary"></i>
+                        </div>
+                        <h3>Python Programming</h3>
+                        <p class="text-muted mb-3">Learn Python from basics to advanced concepts including data structures, OOP, and practical applications.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Python Basics</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Data Structures</li>
+                            <li><i class="fas fa-check text-success me-2"></i>OOP Concepts</li>
+                            <li><i class="fas fa-check text-success me-2"></i>File Handling</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-success">Beginner</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fab fa-java fa-3x text-danger"></i>
+                        </div>
+                        <h3>Java Programming</h3>
+                        <p class="text-muted mb-3">Comprehensive Java tutorial covering core concepts, OOP, collections, and advanced features.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Java Fundamentals</li>
+                            <li><i class="fas fa-check text-success me-2"></i>OOP in Java</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Collections Framework</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Exception Handling</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning">Intermediate</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-cube fa-3x text-info"></i>
+                        </div>
+                        <h3>C++ Programming</h3>
+                        <p class="text-muted mb-3">Learn C++ programming including pointers, memory management, STL, and modern C++ features.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>C++ Basics</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Pointers & Memory</li>
+                            <li><i class="fas fa-check text-success me-2"></i>STL Containers</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Modern C++</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning">Intermediate</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interview Preparation Tutorials -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-briefcase text-purple me-3"></i>Interview Preparation
+                </h2>
+                <p class="lead text-muted">Prepare for technical interviews with comprehensive guides</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-brain fa-3x text-warning"></i>
+                        </div>
+                        <h3>Data Structures for Interviews</h3>
+                        <p class="text-muted mb-3">Master data structures commonly asked in interviews with problem-solving approaches and examples.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Arrays & Strings</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Linked Lists</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Trees & Graphs</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Hash Tables</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-danger">Advanced</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-tachometer-alt fa-3x text-danger"></i>
+                        </div>
+                        <h3>Algorithms for Interviews</h3>
+                        <p class="text-muted mb-3">Learn essential algorithms including sorting, searching, dynamic programming, and graph algorithms.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Sorting Algorithms</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Searching</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Dynamic Programming</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Graph Algorithms</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-danger">Advanced</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-comments fa-3x text-success"></i>
+                        </div>
+                        <h3>System Design</h3>
+                        <p class="text-muted mb-3">Learn system design fundamentals and common interview patterns for designing scalable systems.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Design Principles</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Scalability</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Database Design</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Case Studies</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-danger">Advanced</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CS Fundamentals Tutorials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    <i class="fas fa-microchip text-primary me-3"></i>CS Fundamentals
+                </h2>
+                <p class="lead text-muted">Strengthen your computer science foundation</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-network-wired fa-3x text-info"></i>
+                        </div>
+                        <h3>Computer Networks</h3>
+                        <p class="text-muted mb-3">Understand networking concepts including OSI model, TCP/IP, protocols, and network security.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>OSI Model</li>
+                            <li><i class="fas fa-check text-success me-2"></i>TCP/IP Protocol</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Network Security</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Routing & Switching</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning">Intermediate</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-desktop fa-3x text-success"></i>
+                        </div>
+                        <h3>Operating Systems</h3>
+                        <p class="text-muted mb-3">Learn OS concepts including processes, memory management, file systems, and synchronization.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Process Management</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Memory Management</li>
+                            <li><i class="fas fa-check text-success me-2"></i>File Systems</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Synchronization</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning">Intermediate</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutorial-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-shapes fa-3x text-purple"></i>
+                        </div>
+                        <h3>OOP Concepts</h3>
+                        <p class="text-muted mb-3">Master object-oriented programming principles including encapsulation, inheritance, polymorphism, and abstraction.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Classes & Objects</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Inheritance</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Polymorphism</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Design Patterns</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-success">Beginner</span>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-3">Want More Tutorials?</h2>
+            <p class="lead mb-4">Subscribe to our newsletter and get the latest tutorials delivered to your inbox</p>
+            <form class="row justify-content-center g-3" id="newsletterForm">
+                <div class="col-auto">
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-light btn-lg">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white mb-3">Shiva Tutorials</h5>
+                    <p class="text-white-50">Your trusted partner for IT education. Learn programming, web development, and computer science fundamentals with our comprehensive tutorials.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-white mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="courses.html" class="text-white-50 text-decoration-none">Courses</a></li>
+                        <li><a href="tutorials.html" class="text-white-50 text-decoration-none">Tutorials</a></li>
+                        <li><a href="interview.html" class="text-white-50 text-decoration-none">Interview Questions</a></li>
+                        <li><a href="notes.html" class="text-white-50 text-decoration-none">Notes</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-white mb-3">Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="text-white mb-3">Contact Info</h6>
+                    <p class="text-white-50">
+                        <i class="fas fa-envelope me-2"></i>info@shivatutorials.com<br>
+                        <i class="fas fa-phone me-2"></i>+91 98765 43210<br>
+                        <i class="fas fa-map-marker-alt me-2"></i>Bangalore, India
+                    </p>
+                </div>
+            </div>
+            <hr class="bg-white-50">
+            <div class="text-center py-3">
+                <p class="text-white-50 mb-0">&copy; 2024 Shiva Tutorials. All rights reserved. Made with <i class="fas fa-heart text-danger"></i> for learners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Alert Container -->
+    <div id="alertContainer" class="position-fixed top-0 end-0 p-3" style="z-index: 1050;"></div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
